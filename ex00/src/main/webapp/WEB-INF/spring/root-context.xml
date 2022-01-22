@@ -6,6 +6,17 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
+		<property name="driverClassName" value = "org.mariadb.jdbc.Driver"></property>
+		<property name="jdbcUrl" value="jdbc:mariadb://127.0.0.1:3306/yurina"></property>
+		<property name="username" value="yurina"></property>
+		<property name="password" value="yurina"></property>
+	</bean>
+	
+	<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+		<constructor-arg ref="hikariConfig"/>
+	</bean>
+	
 	<context:component-scan base-package="org.zerock.sample">
 	</context:component-scan>
 		
