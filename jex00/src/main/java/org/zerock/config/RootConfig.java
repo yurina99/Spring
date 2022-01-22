@@ -25,5 +25,5 @@ public class RootConfig {
 		
 		return dataSource;
 	}
-
+ 
 }
