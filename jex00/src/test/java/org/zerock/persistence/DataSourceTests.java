@@ -39,7 +39,9 @@ public class DataSourceTests {
 		} catch (Exception e) {
 			// TODO: handle exception
 			fail(e.getMessage());
-		}
+		} 
+		
+		System.out.print("test");
 		
 	}
 	
