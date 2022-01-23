@@ -20,3 +20,27 @@ bin/*.txt
 # ignore all .pdf files in the doc/ directory and any of its subdirectories
 # /** matches 0 or more directories
 doc/**/*.pdf
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.db
+
+# Eclipse
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+.classpath
+.settings/
+.loadpath
+/src/main/resources/rebel.xml
+*.properties
+*.MF
