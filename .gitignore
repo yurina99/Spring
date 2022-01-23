@@ -28,6 +28,7 @@ doc/**/*.pdf
 *.db
 
 # Eclipse
+target/
 MANIFEST.MF
 
 target/
