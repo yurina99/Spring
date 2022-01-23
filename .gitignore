@@ -28,19 +28,5 @@ doc/**/*.pdf
 *.db
 
 # Eclipse
-*.pydevproject
-.project
-.metadata
-bin/**
-tmp/**
-tmp/**/*
-*.tmp
-*.bak
-*.swp
-*~.nib
-.classpath
-.settings/
-.loadpath
-/src/main/resources/rebel.xml
+/target/
 *.properties
-*.MF
