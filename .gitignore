@@ -28,8 +28,6 @@ doc/**/*.pdf
 *.db
 
 # Eclipse
-target/
-MANIFEST.MF
+target/**/MANIFEST.MF
 
-target/
-*.properties
+target/*.properties
