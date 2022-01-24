@@ -17,11 +17,24 @@ import com.zaxxer.hikari.HikariDataSource;
 @MapperScan(basePackages= {"org.zerock.mapper"})
 public class RootConfig {
 	
+//	@Bean
+//	public DataSource dataSource() {
+//		HikariConfig hikariConfig = new HikariConfig();
+//		hikariConfig.setDriverClassName("org.mariadb.jdbc.Driver");
+//		hikariConfig.setJdbcUrl("jdbc:mariadb://127.0.0.1:3306/yurina");
+//		hikariConfig.setUsername("yurina");
+//		hikariConfig.setPassword("yurina");
+//		
+//		HikariDataSource dataSource = new HikariDataSource(hikariConfig);
+//		
+//		return dataSource; 
+//	}
+	
 	@Bean
 	public DataSource dataSource() {
 		HikariConfig hikariConfig = new HikariConfig();
-		hikariConfig.setDriverClassName("org.mariadb.jdbc.Driver");
-		hikariConfig.setJdbcUrl("jdbc:mariadb://127.0.0.1:3306/yurina");
+		hikariConfig.setDriverClassName("net.sf.log4jdbc.sql.jdbcapi.DriverSpy");
+		hikariConfig.setJdbcUrl("jdbc:log4jdbc:mysql://localhost:3306/yurina?serverTimezone=Asia/Seoul");
 		hikariConfig.setUsername("yurina");
 		hikariConfig.setPassword("yurina");
 		

@@ -151,7 +151,7 @@
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis</artifactId>
-			<version>3.4.6</version>
+			<version>3.5.2</version>
 		</dependency>		
 		<dependency>
 			<groupId>org.mybatis</groupId>
@@ -167,6 +167,13 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
 			<version>${org.springframework-version}</version>
+		</dependency>
+		
+		<!--  log4jdbc - log4j2 -->
+		<dependency>
+			<groupId>org.bgee.log4jdbc-log4j2</groupId>
+			<artifactId>log4jdbc-log4j2-jdbc4</artifactId>
+			<version>1.16</version>
 		</dependency>
 		
 		 
